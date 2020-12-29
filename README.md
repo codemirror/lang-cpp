@@ -1,6 +1,6 @@
-# @codemirror/lang-cpp
+# @codemirror/lang-cpp [![NPM version](https://img.shields.io/npm/v/@codemirror/lang-cpp.svg)](https://www.npmjs.org/package/@codemirror/lang-cpp)
 
-[ [![NPM version](https://img.shields.io/npm/v/@codemirror/next.svg)](https://www.npmjs.org/package/@codemirror/lang-cpp) | [**WEBSITE**](https://codemirror.net/6/) | [**ISSUES**](https://github.com/codemirror/codemirror.next/issues) | [**FORUM**](https://discuss.codemirror.net/c/next/) | [**CHANGELOG**](https://github.com/codemirror/lang-cpp/blob/main/CHANGELOG.md) ]
+[ [**WEBSITE**](https://codemirror.net/6/) | [**ISSUES**](https://github.com/codemirror/codemirror.next/issues) | [**FORUM**](https://discuss.codemirror.net/c/next/) | [**CHANGELOG**](https://github.com/codemirror/lang-cpp/blob/main/CHANGELOG.md) ]
 
 This package implements C++ language support for the
 [CodeMirror](https://codemirror.net/6/) code editor.
