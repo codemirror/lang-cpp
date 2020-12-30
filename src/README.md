@@ -20,18 +20,7 @@ conduct](http://contributor-covenant.org/version/1/1/0/) that applies
 to communication around the project.
 
 ## API Reference
-<dl>
-<dt id="user-content-cpp">
-  <code><strong><a href="#user-content-cpp">cpp</a></strong>() → <a href="https://codemirror.net/6/docs/ref#language.LanguageSupport">LanguageSupport</a></code></dt>
 
-<dd><p>Language support for C++.</p>
-</dd>
-<dt id="user-content-cpplanguage">
-  <code><strong><a href="#user-content-cpplanguage">cppLanguage</a></strong>: <a href="https://codemirror.net/6/docs/ref#language.LezerLanguage">LezerLanguage</a></code></dt>
+@cpp
 
-<dd><p>A language provider based on the <a href="https://github.com/lezer-parser/cpp">Lezer C++
-parser</a>, extended with
-highlighting and indentation information.</p>
-</dd>
-</dl>
-
+@cppLanguage
