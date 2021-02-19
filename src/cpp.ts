@@ -1,5 +1,5 @@
 import {parser} from "lezer-cpp"
-import {flatIndent, continuedIndent, indentNodeProp, foldNodeProp,
+import {flatIndent, continuedIndent, indentNodeProp, foldNodeProp, foldInside,
         LezerLanguage, LanguageSupport} from "@codemirror/language"
 import {styleTags, tags as t} from "@codemirror/highlight"
 
@@ -18,8 +18,7 @@ export const cppLanguage = LezerLanguage.define({
         Statement: continuedIndent({except: /^{/})
       }),
       foldNodeProp.add({
-        "DeclarationList CompoundStatement EnumeratorList FieldDeclarationList InitializerList"
-        (tree) { return {from: tree.from + 1, to: tree.to - 1} },
+        "DeclarationList CompoundStatement EnumeratorList FieldDeclarationList InitializerList": foldInside,
         BlockComment(tree) { return {from: tree.from + 2, to: tree.to - 2} }
       }),
       styleTags({
