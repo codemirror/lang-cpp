@@ -1,12 +1,12 @@
 import {parser} from "@lezer/cpp"
 import {flatIndent, continuedIndent, indentNodeProp, foldNodeProp, foldInside,
-        LezerLanguage, LanguageSupport} from "@codemirror/language"
+        LRLanguage, LanguageSupport} from "@codemirror/language"
 import {styleTags, tags as t} from "@codemirror/highlight"
 
 /// A language provider based on the [Lezer C++
 /// parser](https://github.com/lezer-parser/cpp), extended with
 /// highlighting and indentation information.
-export const cppLanguage = LezerLanguage.define({
+export const cppLanguage = LRLanguage.define({
   parser: parser.configure({
     props: [
       indentNodeProp.add({
