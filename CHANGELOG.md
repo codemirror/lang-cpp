@@ -1,3 +1,9 @@
+## 6.0.1 (2022-06-17)
+
+### Bug fixes
+
+Add the appropriate indentation metadata for blocks.
+
 ## 6.0.0 (2022-06-08)
 
 ### Breaking changes
