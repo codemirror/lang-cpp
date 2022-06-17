@@ -1,5 +1,6 @@
 import {parser} from "@lezer/cpp"
-import {flatIndent, continuedIndent, indentNodeProp, foldNodeProp, foldInside,
+import {flatIndent, continuedIndent, delimitedIndent, indentNodeProp,
+        foldNodeProp, foldInside,
         LRLanguage, LanguageSupport} from "@codemirror/language"
 
 /// A language provider based on the [Lezer C++
@@ -14,6 +15,7 @@ export const cppLanguage = LRLanguage.define({
         LabeledStatement: flatIndent,
         CaseStatement: context => context.baseIndent + context.unit,
         BlockComment: () => -1,
+        CompoundStatement: delimitedIndent({closing: "}"}),
         Statement: continuedIndent({except: /^{/})
       }),
       foldNodeProp.add({
