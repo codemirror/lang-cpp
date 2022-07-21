@@ -14,7 +14,7 @@ export const cppLanguage = LRLanguage.define({
         TryStatement: continuedIndent({except: /^\s*({|catch)\b/}),
         LabeledStatement: flatIndent,
         CaseStatement: context => context.baseIndent + context.unit,
-        BlockComment: () => -1,
+        BlockComment: () => null,
         CompoundStatement: delimitedIndent({closing: "}"}),
         Statement: continuedIndent({except: /^{/})
       }),
