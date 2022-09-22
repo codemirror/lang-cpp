@@ -26,7 +26,8 @@ export const cppLanguage = LRLanguage.define({
   }),
   languageData: {
     commentTokens: {line: "//", block: {open: "/*", close: "*/"}},
-    indentOnInput: /^\s*(?:case |default:|\{|\})$/
+    indentOnInput: /^\s*(?:case |default:|\{|\})$/,
+    closeBrackets: {stringPrefixes: ["L", "u", "U", "u8", "LR", "UR", "uR", "u8R", "R"]}
   }
 })
 
