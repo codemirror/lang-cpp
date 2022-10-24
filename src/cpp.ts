@@ -7,6 +7,7 @@ import {flatIndent, continuedIndent, delimitedIndent, indentNodeProp,
 /// parser](https://github.com/lezer-parser/cpp), extended with
 /// highlighting and indentation information.
 export const cppLanguage = LRLanguage.define({
+  name: "cpp",
   parser: parser.configure({
     props: [
       indentNodeProp.add({
