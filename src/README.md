@@ -19,6 +19,19 @@ we have a [code of
 conduct](http://contributor-covenant.org/version/1/1/0/) that applies
 to communication around the project.
 
+## Usage
+
+```javascript
+import {EditorView, basicSetup} from "codemirror"
+import {cpp} from "@codemirror/lang-cpp"
+
+const view = new EditorView({
+  parent: document.body,
+  doc: `for (int i = 0; i < 1024; i++)\n  cout << elt[i] << "\\n";`,
+  extensions: [basicSetup, cpp()]
+})
+```
+
 ## API Reference
 
 @cpp
